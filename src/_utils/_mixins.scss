@@ -1,0 +1,23 @@
+@mixin smallerScreens {
+  @media (max-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin transition-effect($properties,
+  $duration: $transition-duration,
+  $timing-function: ease-in-out) {
+  $transitions: ();
+
+  @each $property in $properties {
+    $transitions: append($transitions, $property $duration $timing-function, comma);
+  }
+
+  transition: $transitions;
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
