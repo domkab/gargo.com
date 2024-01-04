@@ -27,10 +27,10 @@
 
   &__nav-link {
     position: relative;
-    @extend %heading-mobile-header-semi-bold;
-
-    color: $color-neutral;
+    @extend %heading-header-semi-bold;
     padding: 10px 16px 8px 16px;
+
+    // color: $color-white;
 
     @include transition-effect((color));
 
@@ -38,7 +38,6 @@
       color: $color-primary;
 
       &::after {
-
         position: absolute;
         content: '';
         bottom: 0;

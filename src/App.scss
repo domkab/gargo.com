@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@300;600&display=swap');
 
 @import "./_utils/_vars";
-@import "./_utils/_extends";
 @import "./_utils/_mixins";
+@import "./_utils/_extends";
 @import "./_utils/_animations";
 @import "./_utils/_reset.scss";
 
@@ -17,3 +17,5 @@ body {
 }
 
 @import "./Components/Header/Header.scss";
+@import "./Components/Hero/Hero.scss";
+@import "./Components/Works/Works.scss";

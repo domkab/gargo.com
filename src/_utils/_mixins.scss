@@ -21,3 +21,14 @@
   align-items: center;
   justify-content: center;
 }
+
+@mixin heading-($size, $weight, $color) {
+  font-family: $font-family;
+  font-size: $size;
+  font-style: normal;
+  font-weight: $weight;
+  line-height: 150%;
+  color: $color;
+  // letter-spacing: ($size / 24) * 0.64px;
+  // text-transform: uppercase;
+}

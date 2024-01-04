@@ -1,17 +1,26 @@
-%heading-mobile-light {
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 300;
-  line-height: 150%;
-  letter-spacing: -1.12px;
-}
-
-%heading-mobile-header-semi-bold {
-  font-family: $font-family;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 150%;
+%heading-header-semi-bold {
+  @include heading-(16px, 600, $color-white);
   letter-spacing: 0.64px;
   text-transform: uppercase;
+}
+
+%heading-hero-light {
+  @include heading-(24px, 300, $color-gray);
+}
+%heading-hero-semi-bold {
+  @include heading-(24px, 600, $color-white);
+}
+
+%heading-works-light {
+  @include heading-(20px, 300, $color-gray);
+}
+%heading-works-bold {
+  @include heading-(20px, 600, $color-white);
+}
+
+%heading-work-light {
+  @include heading-(12px, 300, $color-gray);
+}
+%heading-work-bold {
+  @include heading-(14px, 600, $color-white);
 }
