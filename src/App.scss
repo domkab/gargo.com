@@ -1,11 +1,19 @@
-body {
-  box-sizing: border-box;
-  margin: 0;
-  scroll-behavior: smooth;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Work+Sans:wght@300;600&display=swap');
 
 @import "./_utils/_vars";
 @import "./_utils/_extends";
 @import "./_utils/_mixins";
 @import "./_utils/_animations";
 @import "./_utils/_reset.scss";
+
+html {
+  background: $color-background-gradient;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+@import "./Components/Header/Header.scss";

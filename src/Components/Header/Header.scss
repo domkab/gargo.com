@@ -5,12 +5,12 @@
   align-items: center;
 
   &__logo {
-    font-size: 2rem; 
+    margin: 20px 0 15px 0;
   }
 
-  &__nav {
-    // Styles for the navigation bar
-  }
+  // &__nav {
+  //   // Styles for the navigation bar
+  // }
 
   &__nav-list {
     list-style: none;
@@ -19,15 +19,36 @@
     display: flex;
   }
 
-  &__nav-item {
-    // Styles for the navigation item
-  }
+  // &__nav-item {
+  //   &:not(:last-child) {
+  //     // margin-right: 20px;
+  //   }
+  // }
 
   &__nav-link {
-    text-decoration: none;
-    // Add more styles for the navigation links here
+    position: relative;
+    @extend %heading-mobile-header-semi-bold;
 
-    &--active {
+    color: $color-neutral;
+    padding: 10px 16px 8px 16px;
+
+    @include transition-effect((color));
+
+    &:hover, &--active {
+      color: $color-primary;
+
+      &::after {
+
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        background-color: antiquewhite;
+        width: 9px;
+        height: 2.5px;
+      }
     }
   }
 }

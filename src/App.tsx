@@ -1,6 +1,6 @@
 // import { Routes } from 'react-router-dom';
-import './App.scss';
 import { Header } from './Components/Header/Header';
+import './App.scss';
 
 const App: React.FC = () => {
   return (

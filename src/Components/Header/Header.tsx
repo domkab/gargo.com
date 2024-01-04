@@ -1,14 +1,17 @@
 import { NavLink } from 'react-router-dom';
-import './Header.scss';
+import logo from '../../icons/logo.svg';
 
 export const Header: React.FC = () => {
   const getNavLinkClass = (isActive: boolean) => {
-    return isActive ? "header__nav-link header__nav-link--active" : "header__nav-link";
+    return isActive
+      ? "header__nav-link header__nav-link--active"
+      : "header__nav-link";
   };
 
   return (
     <header className="header">
-      <h1 className="header__logo">GARGO</h1>
+      <img className="header__logo" src={logo} alt="site logo" />
+
       <nav className="header__nav">
         <ul className="header__nav-list">
           <li className="header__nav-item">

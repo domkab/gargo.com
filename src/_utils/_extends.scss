@@ -1,8 +1,17 @@
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+%heading-mobile-light {
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -1.12px;
+}
+
+%heading-mobile-header-semi-bold {
+  font-family: $font-family;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: 0.64px;
+  text-transform: uppercase;
 }
