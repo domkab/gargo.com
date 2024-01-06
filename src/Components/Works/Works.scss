@@ -1,8 +1,10 @@
 .works {
   display: flex;
   justify-content: center;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
+  margin: 0 auto;
   align-items: center;
+  max-width: 260px;
 
   &__title {
     margin-bottom: 40px;
@@ -20,14 +22,20 @@
 .work {
   display: flex;
   flex-flow: column wrap;
-  max-width: 260px;
+  // justify-content: center;
+  // align-items: center;
+
   margin-bottom: 90px;
   &__image {
+    max-width: 260px;
+    min-height: 258px;
     margin-bottom: 32px;
+    object-fit: cover;
   }
 
   &__title {
     @extend %heading-work-bold;
+    text-transform: uppercase;
     margin-bottom: 8px;
   }
 
@@ -62,5 +70,10 @@
     text-align: center;
     border: 1px solid $color-white;
     border-radius: 100px;
+    @include transition-effect(background-color);
+
+    &:hover, &:active {
+      background-color: $color-primary;
+    }
   }
 }

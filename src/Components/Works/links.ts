@@ -4,7 +4,3 @@ export const links: string[] = [
   'https://www.instagram.com/moto.inn/reel/Csf-CzMM8nz/',
   'https://www.instagram.com/hype6six/p/Cy286HQts8G/'
 ]
-
-export const images: string[] = [
-  '../../images/nextvelo-proeyewear.png',
-]
