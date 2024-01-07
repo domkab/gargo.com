@@ -1,5 +1,5 @@
 {
-  "name": "3d_test",
+  "name": "gargo.com",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@testing-library/user-event": "^13.5.0",
     "classnames": "^2.5.1",
     "react": "^18.2.0",
+    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
     "react-redux": "^9.0.4",
     "react-router-dom": "^6.21.0",
@@ -24,7 +25,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://github.com/domkab/gargo.com",
+  "homepage": "https://domkab.github.io/gargo.com",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -1,0 +1,57 @@
+.about {
+  margin: 0 auto 50px auto;
+  width: 324px;
+
+  &__intro {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    &-title {
+      @extend %heading-works-bold;
+      margin-bottom: 16px;
+    }
+
+    &-desc {
+      text-align: center;
+      &--light {
+        @extend %heading-work-light;
+      }
+
+      &--bold {
+        @extend %heading-work-bold;
+        font-size: 12px;
+      }
+    }
+  }
+
+  &__skills {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+  }
+
+  &__skill-container {
+    display: flex;
+    max-width: 324px;
+
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .CircularProgressbar {
+      width: 50px;
+      vertical-align:baseline;
+  }
+  }
+
+  &__skill {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  &__skill-name {
+    @extend %heading-work-bold; 
+  }
+}
