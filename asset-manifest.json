@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/gargo.com/static/css/main.ac047713.css",
-    "main.js": "/gargo.com/static/js/main.a62c61a0.js",
-    "static/js/872.61ce6b67.chunk.js": "/gargo.com/static/js/872.61ce6b67.chunk.js",
-    "static/js/227.8a91ce9f.chunk.js": "/gargo.com/static/js/227.8a91ce9f.chunk.js",
-    "static/js/526.bf399e13.chunk.js": "/gargo.com/static/js/526.bf399e13.chunk.js",
-    "static/js/232.4e9ed329.chunk.js": "/gargo.com/static/js/232.4e9ed329.chunk.js",
-    "static/js/237.d433d2d7.chunk.js": "/gargo.com/static/js/237.d433d2d7.chunk.js",
-    "static/js/357.590f54b6.chunk.js": "/gargo.com/static/js/357.590f54b6.chunk.js",
+    "main.css": "/gargo.com/static/css/main.c256485e.css",
+    "main.js": "/gargo.com/static/js/main.b4297e57.js",
+    "static/js/872.4045954f.chunk.js": "/gargo.com/static/js/872.4045954f.chunk.js",
+    "static/js/227.f885fb42.chunk.js": "/gargo.com/static/js/227.f885fb42.chunk.js",
+    "static/js/526.8c9cda2c.chunk.js": "/gargo.com/static/js/526.8c9cda2c.chunk.js",
+    "static/js/232.ce3b0201.chunk.js": "/gargo.com/static/js/232.ce3b0201.chunk.js",
+    "static/js/237.e05b8743.chunk.js": "/gargo.com/static/js/237.e05b8743.chunk.js",
+    "static/js/357.d86fb59a.chunk.js": "/gargo.com/static/js/357.d86fb59a.chunk.js",
     "static/media/logo.svg": "/gargo.com/static/media/logo.f151b5d8de955b1bfb30929d65cd33ea.svg",
     "static/media/nextvelo-proeyewear1920.png": "/gargo.com/static/media/nextvelo-proeyewear1920.b49574b4cd2c4cd0f431.png",
     "static/media/nextvelo-proeyewear1440.png": "/gargo.com/static/media/nextvelo-proeyewear1440.7adbcd7211e4fd50fd3e.png",
@@ -25,17 +25,17 @@
     "static/media/hype6.svg": "/gargo.com/static/media/hype6.feb072856795f077c8669f88c3862dcf.svg",
     "index.html": "/gargo.com/index.html",
     "static/media/chevron-down.svg": "/gargo.com/static/media/chevron-down.d1d85b13467309a35a1458d54cbe736d.svg",
-    "main.ac047713.css.map": "/gargo.com/static/css/main.ac047713.css.map",
-    "main.a62c61a0.js.map": "/gargo.com/static/js/main.a62c61a0.js.map",
-    "872.61ce6b67.chunk.js.map": "/gargo.com/static/js/872.61ce6b67.chunk.js.map",
-    "227.8a91ce9f.chunk.js.map": "/gargo.com/static/js/227.8a91ce9f.chunk.js.map",
-    "526.bf399e13.chunk.js.map": "/gargo.com/static/js/526.bf399e13.chunk.js.map",
-    "232.4e9ed329.chunk.js.map": "/gargo.com/static/js/232.4e9ed329.chunk.js.map",
-    "237.d433d2d7.chunk.js.map": "/gargo.com/static/js/237.d433d2d7.chunk.js.map",
-    "357.590f54b6.chunk.js.map": "/gargo.com/static/js/357.590f54b6.chunk.js.map"
+    "main.c256485e.css.map": "/gargo.com/static/css/main.c256485e.css.map",
+    "main.b4297e57.js.map": "/gargo.com/static/js/main.b4297e57.js.map",
+    "872.4045954f.chunk.js.map": "/gargo.com/static/js/872.4045954f.chunk.js.map",
+    "227.f885fb42.chunk.js.map": "/gargo.com/static/js/227.f885fb42.chunk.js.map",
+    "526.8c9cda2c.chunk.js.map": "/gargo.com/static/js/526.8c9cda2c.chunk.js.map",
+    "232.ce3b0201.chunk.js.map": "/gargo.com/static/js/232.ce3b0201.chunk.js.map",
+    "237.e05b8743.chunk.js.map": "/gargo.com/static/js/237.e05b8743.chunk.js.map",
+    "357.d86fb59a.chunk.js.map": "/gargo.com/static/js/357.d86fb59a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ac047713.css",
-    "static/js/main.a62c61a0.js"
+    "static/css/main.c256485e.css",
+    "static/js/main.b4297e57.js"
   ]
 }
