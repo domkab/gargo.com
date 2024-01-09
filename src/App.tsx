@@ -66,25 +66,25 @@ const App: React.FC = () => {
         },
         links: {
           color: "#ffffff",
-          distance: 150,
+          distance: 160,
           enable: true,
-          opacity: 0.5,
+          opacity: 0.3,
           width: 1,
         },
         move: {
           enable: true,
           random: false,
-          speed: 2,
+          speed: 0.5,
           straight: false,
         },
         number: {
           density: {
             enable: true,
           },
-          value: 60,
+          value: 20,
         },
         opacity: {
-          value: 0.3,
+          value: 0.25,
         },
         shape: {
           type: "circle",

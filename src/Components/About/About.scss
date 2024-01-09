@@ -41,8 +41,12 @@
 
     .CircularProgressbar {
       width: 50px;
-      vertical-align:baseline;
-  }
+      vertical-align: baseline;
+      &-text {
+        fill: $color-white !important;
+        @include heading-(12px, 300, $color-gray);
+      }
+    }
   }
 
   &__skill {
@@ -52,6 +56,6 @@
   }
 
   &__skill-name {
-    @extend %heading-work-bold; 
+    @extend %heading-work-bold;
   }
 }

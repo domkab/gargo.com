@@ -64,7 +64,7 @@ export const About: React.FC = () => {
         />
       </article>
 
-      {splineLoaded && ( // Render progress bars only if Spline is loaded
+      {splineLoaded && (
         <div className="about__skills">
           {skills.map(skill => (
             <div key={skill.name} className="about__skill-container">
