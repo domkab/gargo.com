@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gargo.com/static/css/main.c256485e.css",
-    "main.js": "/gargo.com/static/js/main.b4297e57.js",
+    "main.css": "/gargo.com/static/css/main.c40eeccc.css",
+    "main.js": "/gargo.com/static/js/main.c0cc56cc.js",
     "static/js/872.4045954f.chunk.js": "/gargo.com/static/js/872.4045954f.chunk.js",
     "static/js/227.f885fb42.chunk.js": "/gargo.com/static/js/227.f885fb42.chunk.js",
     "static/js/526.8c9cda2c.chunk.js": "/gargo.com/static/js/526.8c9cda2c.chunk.js",
@@ -25,8 +25,8 @@
     "static/media/hype6.svg": "/gargo.com/static/media/hype6.feb072856795f077c8669f88c3862dcf.svg",
     "index.html": "/gargo.com/index.html",
     "static/media/chevron-down.svg": "/gargo.com/static/media/chevron-down.d1d85b13467309a35a1458d54cbe736d.svg",
-    "main.c256485e.css.map": "/gargo.com/static/css/main.c256485e.css.map",
-    "main.b4297e57.js.map": "/gargo.com/static/js/main.b4297e57.js.map",
+    "main.c40eeccc.css.map": "/gargo.com/static/css/main.c40eeccc.css.map",
+    "main.c0cc56cc.js.map": "/gargo.com/static/js/main.c0cc56cc.js.map",
     "872.4045954f.chunk.js.map": "/gargo.com/static/js/872.4045954f.chunk.js.map",
     "227.f885fb42.chunk.js.map": "/gargo.com/static/js/227.f885fb42.chunk.js.map",
     "526.8c9cda2c.chunk.js.map": "/gargo.com/static/js/526.8c9cda2c.chunk.js.map",
@@ -35,7 +35,7 @@
     "357.d86fb59a.chunk.js.map": "/gargo.com/static/js/357.d86fb59a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c256485e.css",
-    "static/js/main.b4297e57.js"
+    "static/css/main.c40eeccc.css",
+    "static/js/main.c0cc56cc.js"
   ]
 }
