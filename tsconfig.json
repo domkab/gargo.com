@@ -12,5 +12,11 @@
     "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
   },
 
-  "types": ["react", "react-dom", "react-dom/client"]
+  "types": ["react", "react-dom", "react-dom/client"],
+
+  "moduleResolution": "node",
+  "baseUrl": "./", // This must be specified if "paths" is set.
+  "paths": {
+    "*": ["node_modules/*", "src/*"] // Adjust according to your project structure.
+  }
 }

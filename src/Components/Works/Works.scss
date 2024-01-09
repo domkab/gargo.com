@@ -4,7 +4,7 @@
   flex-flow: column wrap;
   margin: 0 auto;
   align-items: center;
-  max-width: 260px;
+  max-width: 320px;
 
   &__title {
     margin-bottom: 40px;
@@ -22,13 +22,18 @@
 .work {
   display: flex;
   flex-flow: column wrap;
-  // justify-content: center;
+  justify-content: center;
   // align-items: center;
 
-  margin-bottom: 90px;
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 36px;
+  }
+
   &__image {
-    max-width: 260px;
-    min-height: 258px;
+    width: 320px;
+    height: 260px;
     margin-bottom: 32px;
     object-fit: cover;
   }
@@ -47,7 +52,7 @@
 
     &--bold {
       @extend %heading-work-bold;
-      font-size: 12px;
+      font-size: 18px;
       color: $color-white;
     }
   }
@@ -55,18 +60,19 @@
   &__category {
     display: flex;
     @extend %heading-work-light;
-    font-size: 10px;
+    font-size: 14px;
     margin-bottom: 24px;
   }
 
   &__button {
     @include flex-center;
     @extend %heading-work-light;
+    font-size: 10px;
     color: $color-white;
     margin: 0 auto;
     width: 96px;
     height: 24px;
-    padding: 8px 16px;
+    padding: 6px 16px;
     text-align: center;
     border: 1px solid $color-white;
     border-radius: 100px;

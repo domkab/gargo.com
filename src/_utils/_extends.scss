@@ -5,22 +5,22 @@
 }
 
 %heading-hero-light {
-  @include heading-(24px, 300, $color-gray);
+  @include heading-(36px, 300, $color-gray);
 }
 %heading-hero-semi-bold {
-  @include heading-(24px, 600, $color-white);
+  @include heading-(36px, 600, $color-white);
 }
 
 %heading-works-light {
-  @include heading-(20px, 300, $color-gray);
+  @include heading-(32px, 300, $color-gray);
 }
 %heading-works-bold {
-  @include heading-(20px, 600, $color-white);
+  @include heading-(32px, 600, $color-white);
 }
 
 %heading-work-light {
-  @include heading-(12px, 300, $color-gray);
+  @include heading-(18px, 300, $color-gray);
 }
 %heading-work-bold {
-  @include heading-(14px, 600, $color-white);
+  @include heading-(20px, 600, $color-white);
 }
