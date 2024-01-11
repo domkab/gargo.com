@@ -44,7 +44,7 @@ export const About: React.FC = () => {
   }, [loaded, splineLoaded]);
 
   return (
-    <section className="about" ref={aboutRef}>
+    <section id="about" className="about" ref={aboutRef}>
       <article className="about__intro">
         <h3 className="about__intro-title">A bit about me</h3>
         <p className="about__intro-desc">
@@ -73,6 +73,7 @@ export const About: React.FC = () => {
                 text={`${visible ? skill.percentage : 0}%`}
                 styles={buildStyles({
                   pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
+                  trailColor: 'transparent',
                 })}
                 className="about__skill"
               />

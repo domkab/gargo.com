@@ -2,7 +2,7 @@ import { workItems } from './WorkItems'
 
 export const Works: React.FC = () => {
   return (
-    <section className="works">
+    <section id="work" className="works">
       <h2 className="works__title">
         <span className="works__title--light">Selected </span>
         <span className="works__title--bold">Works</span>

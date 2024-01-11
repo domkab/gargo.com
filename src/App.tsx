@@ -13,6 +13,7 @@ import {
 } from "@tsparticles/engine";
 
 import { loadSlim } from "@tsparticles/slim";
+import { Footer } from './Components/Footer';
 
 const App: React.FC = () => {
   console.log('rendering app');
@@ -111,6 +112,7 @@ const App: React.FC = () => {
       <Hero />
       <Works />
       <About />
+      <Footer />
     </div>
   );
 }

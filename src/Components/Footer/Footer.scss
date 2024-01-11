@@ -1,0 +1,40 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  &__headings {
+    margin-bottom: 50px;
+  }
+
+  &__heading {
+    @extend %heading-footer-bold;
+
+    &--light {
+      @extend %heading-footer-light;
+    }
+
+    margin-bottom: 4px;
+  }
+
+  &__desc {
+    @include heading-(12px, 300, $color-gray);
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 84px;
+  }
+
+  &__contact {
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+  }
+}
+
+// padding: 0 50px;
