@@ -4,8 +4,14 @@
   flex-flow: column wrap;
   align-items: center;
 
+  @include onLaptop {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 110px;
+  }
+
   &__logo {
-    margin: 20px 0 15px 0;
+    margin: 20px 0 25px 0;
   }
 
   // &__nav {

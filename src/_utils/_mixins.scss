@@ -4,6 +4,18 @@
   }
 }
 
+@mixin onTablet {
+  @media (min-width: 767px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin onLaptop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
 @mixin transition-effect($properties,
   $duration: $transition-duration,
   $timing-function: ease-in-out) {

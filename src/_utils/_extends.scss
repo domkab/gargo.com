@@ -27,7 +27,6 @@
 %heading-footer-bold {
   @include heading-(32px, 600, $color-white);
 }
-
 %heading-footer-light {
   @include heading-(32px, 300, $color-gray);
 }

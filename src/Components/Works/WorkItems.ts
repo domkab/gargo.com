@@ -22,7 +22,7 @@ export const workItems: WorkItem[] = [
     title: 'nexvelo x pro eyewear',
     description: [
       { text: 'MTB pros in action, flaunting BLITZ sports glasses', isBold: false },
-      { text: '3D animation finale highlighting the sleek design.', isBold: true }
+      { text: ' 3D animation finale highlighting the sleek design.', isBold: true }
     ],
     category: 'Videography, Video Editing, 3D Animation',
     link: 'https://www.instagram.com/nextvelo_com/reel/Cz3_oPsNMSP/'

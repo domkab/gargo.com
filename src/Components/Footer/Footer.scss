@@ -2,6 +2,12 @@
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+
+  @include onTablet {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+  
   &__headings {
     margin-bottom: 50px;
   }
