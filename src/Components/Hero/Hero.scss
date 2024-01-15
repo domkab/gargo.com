@@ -1,14 +1,18 @@
 .hero {
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+  align-items: center;
   margin-bottom: 80px;
+
+  @include onLaptop {
+    padding: 0 80px;
+  }
 
   &__object {
     margin-top: 46px;
     margin-bottom: 25px;
   }
-  display: flex;
-  justify-content: center;
-  flex-flow: column nowrap;
-  align-items: center;
 
   &__icon {
     margin-bottom: 42px;
@@ -17,7 +21,7 @@
   &__title {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; // ??????
+    align-items: center;
     text-align: center;
 
     margin-bottom: 56px;
@@ -29,12 +33,60 @@
     &--bold {
       @extend %heading-hero-semi-bold;
     }
+
+    @include onLaptop {
+      display: block;
+      text-align: left;
+      grid-column: 1 / 7;
+      margin-bottom: 80px;
+    }
   }
 
   &__clients {
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column wrap;
     justify-content: center;
+
+    &-container {
+      @include onLaptop {
+        @include useGrid(12, 32px);
+      }
+    }
+
+    @include onLaptop {
+      grid-column: 1 / 13;
+    }
+  }
+
+  &__client {
+    @include onLaptopL {
+
+      &--nextvelo {
+        margin-left: 0;
+        width: 216px;
+        height: 36px;
+      }
+
+      &--videoproduction {
+        width: 216px;
+        height: 36px;
+      }
+
+      &--motoinn {
+        width: 84px;
+        height: 124px;
+      }
+
+      &--proeyewear {
+        width: 296px;
+        height: 46px;
+      }
+
+      &--hype6 {
+        width: 179px;
+        height: 52px;
+      }
+    }
   }
 
   &__client-container {
@@ -45,8 +97,20 @@
     flex-basis: 100%;
     margin-bottom: 20px;
 
+    @include onLaptop {
+      margin-bottom: 226px;
+    }
+
     .hero__client {
       margin-right: 20px;
+
+      @include onLaptop {
+        margin: 0 auto;
+
+        &:first-child {
+          margin-left: 0;
+        }
+      }
 
       &:last-child {
         margin-right: 0;

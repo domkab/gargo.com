@@ -5,13 +5,19 @@
 }
 
 @mixin onTablet {
-  @media (min-width: 767px) and (max-width: 1023px) {
+  @media (min-width: 767px) {
     @content;
   }
 }
 
 @mixin onLaptop {
-  @media (min-width: 1024px) {
+  @media (min-width: 1023px) {
+    @content;
+  }
+}
+
+@mixin onLaptopL {
+  @media (min-width: 1439px) {
     @content;
   }
 }
@@ -41,4 +47,11 @@
   font-weight: $weight;
   line-height: 150%;
   color: $color;
+}
+
+@mixin useGrid($columnsCount, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columnsCount, 1fr);
+  gap: $gap;
+  grid-row-gap: 0;
 }

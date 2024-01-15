@@ -14,6 +14,7 @@ import { WorkItem } from '../../types';
 
 export const workItems: WorkItem[] = [
   {
+    type: '1',
     images: {
       small: nextveloProeyewear480,
       medium: nextveloProeyewear1440,
@@ -25,9 +26,10 @@ export const workItems: WorkItem[] = [
       { text: ' 3D animation finale highlighting the sleek design.', isBold: true }
     ],
     category: 'Videography, Video Editing, 3D Animation',
-    link: 'https://www.instagram.com/nextvelo_com/reel/Cz3_oPsNMSP/'
+    link: 'https://www.instagram.com/nextvelo_com/reel/Cz3_oPsNMSP/',
   },
   {
+    type: '2',
     images: {
       small: videoProduction480,
       medium: videoProduction1440,
@@ -43,6 +45,7 @@ export const workItems: WorkItem[] = [
     link: 'https://x.com/ItsJackCole/status/1725167281431302454?s=20'
   },
   {
+    type: '1',
     images: {
       small: motoInn480,
       medium: motoInn1440,
@@ -57,6 +60,7 @@ export const workItems: WorkItem[] = [
     link: 'https://www.instagram.com/moto.inn/reel/Csf-CzMM8nz'
   },
   {
+    type: '2',
     images: {
       small: hypeSix480,
       medium: hypeSix1440,

@@ -4,6 +4,7 @@ export type DescriptionPart = {
 };
 
 export type WorkItem = {
+  type: string;
   images: {
     small: string;
     medium: string;

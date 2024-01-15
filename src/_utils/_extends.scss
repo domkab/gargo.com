@@ -6,27 +6,60 @@
 
 %heading-hero-light {
   @include heading-(36px, 300, $color-gray);
+
+  @include onLaptop {
+    font-size: 40px
+  }
 }
 %heading-hero-semi-bold {
   @include heading-(36px, 600, $color-white);
+
+  @include onLaptop {
+    font-size: 40px
+  }
 }
 
 %heading-works-light {
   @include heading-(32px, 300, $color-gray);
+
+  @include onLaptop {
+    font-size: 40px
+  }
 }
+
 %heading-works-bold {
   @include heading-(32px, 600, $color-white);
+
+  @include onLaptop {
+    font-size: 40px
+  }
 }
 
 %heading-work-light {
   @include heading-(18px, 300, $color-gray);
+
+  @include onLaptop {
+
+  }
 }
 %heading-work-bold {
   @include heading-(20px, 600, $color-white);
+
+  @include onLaptop {
+    
+  }
 }
 %heading-footer-bold {
   @include heading-(32px, 600, $color-white);
+
+  @include onLaptop {
+    
+  }
 }
 %heading-footer-light {
   @include heading-(32px, 300, $color-gray);
+
+  @include onLaptop {
+    
+  }
 }
