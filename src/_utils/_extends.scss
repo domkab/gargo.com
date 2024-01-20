@@ -39,16 +39,32 @@
   @include heading-(18px, 300, $color-gray);
 
   @include onLaptop {
-
+    font-size: 24px;
   }
 }
 %heading-work-bold {
   @include heading-(20px, 600, $color-white);
 
   @include onLaptop {
-    
+    font-size: 32px;
   }
 }
+
+%heading-about-light {
+  @include heading-(18px, 300, $color-gray);
+
+  @include onLaptop {
+    font-size: 32px;
+  }
+}
+%heading-about-bold {
+  @include heading-(20px, 600, $color-white);
+
+  @include onLaptop {
+    font-size: 32px;
+  }
+}
+
 %heading-footer-bold {
   @include heading-(32px, 600, $color-white);
 

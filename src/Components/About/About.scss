@@ -2,25 +2,57 @@
   margin: 0 auto 50px auto;
   width: 324px;
 
+  @include onLaptop {
+    width: auto;
+  }
+
+  &__container {
+    @include useGrid(12, 32px);
+  }
+
+  @include onLaptop {
+    @include useGrid(12, 32px);
+    justify-content: space-between;
+    margin: 0 80px 50px 80px;
+  }
+
+  &__spline {
+    width: 465px;
+    height: 800px;
+    background-color: aqua;
+    grid-column: 5 / 9;
+  }
+
   &__intro {
     display: flex;
+    margin: auto 0;
     justify-content: center;
     flex-flow: row wrap;
     &-title {
-      @extend %heading-works-bold;
+      @extend %heading-about-bold;
       margin-bottom: 16px;
     }
 
     &-desc {
       text-align: center;
       &--light {
-        @extend %heading-work-light;
+        @extend %heading-about-light;
       }
 
       &--bold {
-        @extend %heading-work-bold;
+        @extend %heading-about-bold;
         // font-size: 12px;
       }
+
+      @include onLaptop {
+        display: inline;
+        text-align: start;
+        margin: auto 0;
+      }
+    }
+
+    @include onLaptop {
+      grid-column: 1/ 4;
     }
   }
 
@@ -29,6 +61,11 @@
     flex-flow: column wrap;
     padding: 0 20px;
     gap: 10px;
+
+    @include onLaptop {
+      grid-column: 9 / 12;
+      justify-content: center;
+    }
   }
 
   &__skill-container {
@@ -58,6 +95,9 @@
   }
 
   &__skill-name {
-    @extend %heading-work-bold;
+    @extend %heading-about-bold;
   }
 }
+
+// 1. about me font sizes
+// 2. skill container width

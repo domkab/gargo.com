@@ -38,8 +38,7 @@ export const workItems: WorkItem[] = [
     title: 'video production+',
     description: [
       { text: '3D animation unfolds as the VP+ logo glides through ', isBold: false },
-      { text: 'a realm of luminous orbs', isBold: true },
-      { text: ' and smaller VP+ insignias.', isBold: false },
+      { text: 'a realm of luminous orbs and smaller VP+ insignias.', isBold: true },
     ],
     category: '3D animation',
     link: 'https://x.com/ItsJackCole/status/1725167281431302454?s=20'
