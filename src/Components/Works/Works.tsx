@@ -26,7 +26,7 @@ export const Works: React.FC = () => {
                   alt={`${item.title} work image`}
                   className={`work__image work__image--${item.type}`}
                 />
-                <div className={`work__wrapper-description-desktop--${item.type}`}>
+                <div className={`work__wrapper-description-desktop work__wrapper-description-desktop--${item.type}`}>
                   <h3 className="work__title">{item.title}</h3>
                   <p className="work__description">
                     {item.description.map((part, partIndex) => (
