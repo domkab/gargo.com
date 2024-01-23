@@ -1,9 +1,10 @@
 /* eslint-disable no-console */
 import './App.scss';
-import { About } from './Components/About';
+// import { About } from './Components/About';
 import { Header } from './Components/Header';
 import { Hero } from './Components/Hero';
 import { Works } from './Components/Works';
+// import { Footer } from './Components/Footer';
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -13,7 +14,6 @@ import {
 } from "@tsparticles/engine";
 
 import { loadSlim } from "@tsparticles/slim";
-import { Footer } from './Components/Footer';
 
 const App: React.FC = () => {
   console.log('rendering app');
@@ -100,7 +100,7 @@ const App: React.FC = () => {
   );
 
   return (
-    <div className="App">
+    <main className="App">
       {init && (
         <Particles
           id="tsparticles"
@@ -111,9 +111,10 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <Works />
-      <About />
-      <Footer />
-    </div>
+      {/* <About /> */}
+      {/* <Footer /> */}
+
+    </main>
   );
 }
 

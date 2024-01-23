@@ -5,8 +5,9 @@
   align-items: center;
   margin-bottom: 80px;
 
-  @include onLaptop {
-    padding: 0 80px;
+  &__content {
+    display: flex;
+    flex-flow: column wrap;
   }
 
   &__object {
@@ -15,6 +16,9 @@
   }
 
   &__icon {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto 42px auto;
     margin-bottom: 42px;
   }
 

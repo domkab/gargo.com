@@ -2,22 +2,22 @@
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
-  margin: 0 auto;
+  // margin: 0 auto;
   align-items: center;
   max-width: 320px;
 
   @include onTablet {
     max-width: 608px;
-    padding: 0 20px;
+    // padding: 0 20px;
   }
 
-  @include onLaptop {
-    max-width: none;
-    padding: 0 80px;
-  }
+  // @include onLaptop {
+  //   max-width: none;
+  //   padding: 0 80px;
+  // }
 
   @include onLaptopL {
-    padding: 0 120px;
+    width: 1220px;
   }
 
   &__title {
@@ -41,7 +41,7 @@
   display: flex;
   flex-flow: column wrap;
   justify-content: center;
-  width: 1220px;
+  // width: 1220px;
   // align-items: center;
   // test for smaller screens if dont break anything
 
