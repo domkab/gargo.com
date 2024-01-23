@@ -1,6 +1,6 @@
 /* eslint-disable no-console */
 import './App.scss';
-// import { About } from './Components/About';
+import { About } from './Components/About';
 import { Header } from './Components/Header';
 import { Hero } from './Components/Hero';
 import { Works } from './Components/Works';
@@ -111,7 +111,7 @@ const App: React.FC = () => {
       <Header />
       <Hero />
       <Works />
-      {/* <About /> */}
+      <About />
       {/* <Footer /> */}
 
     </main>

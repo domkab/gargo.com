@@ -13,13 +13,13 @@
   @include onLaptop {
     @include useGrid(12, 32px);
     justify-content: space-between;
+    grid-auto-flow: dense;
     margin: 0 80px 50px 80px;
   }
 
   &__spline {
     width: 465px;
     height: 800px;
-    background-color: aqua;
     grid-column: 5 / 9;
   }
 

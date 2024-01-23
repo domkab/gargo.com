@@ -48,86 +48,87 @@ export const About: React.FC = () => {
   return (
     width > 767 ? (
       <section id="about" className="about" ref={aboutRef}>
-        <article className="about__intro">
-          <h3 className="about__intro-title">A bit about me</h3>
-          <p className="about__intro-desc">
-            <span className="about__intro-desc--light">
-              I am a Multimedia producer specializing in video production, 3D animation,
-              and digital art design.
-            </span>
-
-            <span className="about__intro-desc--bold">
-              {' '}Transforming ideas into visually compelling experiences.
-            </span>
-          </p>
-        </article>
-
-        <div className="about__spline"></div>
-        {/* <Spline
-          className="about__spline"
-          scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
-          onLoad={() => setSplineLoaded(true)}
-        /> */}
-
-        {splineLoaded && (
-          <div className="about__skills">
-            {skills.map(skill => (
-              <div key={skill.name} className="about__skill-container">
-                <CircularProgressbar
-                  value={visible ? skill.percentage : 0}
-                  text={`${visible ? skill.percentage : 0}%`}
-                  styles={buildStyles({
-                    pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
-                    trailColor: 'transparent',
-                  })}
-                  className="about__skill"
-                />
-                <span className="about__skill-name">{skill.name}</span>
+        <div className="container">
+          <div className="about__content">
+            <article className="about__intro">
+              <h3 className="about__intro-title">A bit about me</h3>
+              <p className="about__intro-desc">
+                <span className="about__intro-desc--light">
+                  I am a Multimedia producer specializing in video production, 3D animation,
+                  and digital art design.
+                </span>
+                <span className="about__intro-desc--bold">
+                  {' '}Transforming ideas into visually compelling experiences.
+                </span>
+              </p>
+            </article>
+            <Spline
+              className="about__spline"
+              scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
+              onLoad={() => setSplineLoaded(true)}
+            />
+            {splineLoaded && (
+              <div className="about__skills">
+                {skills.map(skill => (
+                  <div key={skill.name} className="about__skill-container">
+                    <CircularProgressbar
+                      value={visible ? skill.percentage : 0}
+                      text={`${visible ? skill.percentage : 0}%`}
+                      styles={buildStyles({
+                        pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
+                        trailColor: 'transparent',
+                      })}
+                      className="about__skill"
+                    />
+                    <span className="about__skill-name">{skill.name}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
           </div>
-        )}
+        </div>
       </section>
     ) : (
-      // for mobile and tablet
       <section id="about" className="about" ref={aboutRef}>
-        <article className="about__intro">
-          <h3 className="about__intro-title">A bit about me</h3>
-          <p className="about__intro-desc">
-            <span className="about__intro-desc--light">
-              I am a Multimedia producer specializing in video production, 3D animation,
-              and digital art design.
-            </span>
-
-            <span className="about__intro-desc--bold">
-              {' '}Transforming ideas into visually compelling experiences.
-            </span>
-          </p>
-
-          <Spline
-            scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
-            onLoad={() => setSplineLoaded(true)}
-          />
-        </article>
-
-        {splineLoaded && (
-          <div className="about__skills">
-            {skills.map(skill => (
-              <div key={skill.name} className="about__skill-container">
-                <CircularProgressbar
-                  value={visible ? skill.percentage : 0}
-                  text={`${visible ? skill.percentage : 0}%`}
-                  styles={buildStyles({
-                    pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
-                    trailColor: 'transparent',
-                  })}
-                  className="about__skill"
-                />
-                <span className="about__skill-name">{skill.name}</span>
+        <div className="container">
+          <div className="about__content">
+            <article className="about__intro">
+              <h3 className="about__intro-title">A bit about me</h3>
+              <p className="about__intro-desc">
+                <span className="about__intro-desc--light">
+                  I am a Multimedia producer specializing in video production, 3D animation,
+                  and digital art design.
+                </span>
+                <span className="about__intro-desc--bold">
+                  {' '}Transforming ideas into visually compelling experiences.
+                </span>
+              </p>
+              <Spline
+                // className="about__spline"
+                scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
+                onLoad={() => setSplineLoaded(true)}
+              />
+            </article>
+            {splineLoaded && (
+              <div className="about__skills">
+                {skills.map(skill => (
+                  <div key={skill.name} className="about__skill-container">
+                    <CircularProgressbar
+                      value={visible ? skill.percentage : 0}
+                      text={`${visible ? skill.percentage : 0}%`}
+                      styles={buildStyles({
+                        pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
+                        trailColor: 'transparent',
+                      })}
+                      className="about__skill"
+                    />
+                    <span className="about__skill-name">{skill.name}</span>
+                  </div>
+                ))}
               </div>
-            ))}
+            )}
           </div>
-        )}
+        </div>
       </section>
     ))
 }
