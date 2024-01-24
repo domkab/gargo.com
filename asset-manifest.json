@@ -1,14 +1,13 @@
 {
   "files": {
     "main.css": "/gargo.com/static/css/main.8b2831db.css",
-    "main.js": "/gargo.com/static/js/main.2cdfb42e.js",
+    "main.js": "/gargo.com/static/js/main.2643911c.js",
     "static/js/872.4045954f.chunk.js": "/gargo.com/static/js/872.4045954f.chunk.js",
     "static/js/227.f885fb42.chunk.js": "/gargo.com/static/js/227.f885fb42.chunk.js",
     "static/js/526.8c9cda2c.chunk.js": "/gargo.com/static/js/526.8c9cda2c.chunk.js",
     "static/js/232.ce3b0201.chunk.js": "/gargo.com/static/js/232.ce3b0201.chunk.js",
     "static/js/237.e05b8743.chunk.js": "/gargo.com/static/js/237.e05b8743.chunk.js",
     "static/js/357.d86fb59a.chunk.js": "/gargo.com/static/js/357.d86fb59a.chunk.js",
-    "static/media/logo.svg": "/gargo.com/static/media/logo.f151b5d8de955b1bfb30929d65cd33ea.svg",
     "static/media/nextvelo-proeyewear1920.png": "/gargo.com/static/media/nextvelo-proeyewear1920.b49574b4cd2c4cd0f431.png",
     "static/media/hype-six1920.png": "/gargo.com/static/media/hype-six1920.7c7b00997483b7e3b74a.png",
     "static/media/nextvelo-proeyewear1440.png": "/gargo.com/static/media/nextvelo-proeyewear1440.7adbcd7211e4fd50fd3e.png",
@@ -30,7 +29,7 @@
     "static/media/chevron-down.svg": "/gargo.com/static/media/chevron-down.d1d85b13467309a35a1458d54cbe736d.svg",
     "static/media/arrowRightIcon.svg": "/gargo.com/static/media/arrowRightIcon.dd1484858e702fd654f6.svg",
     "main.8b2831db.css.map": "/gargo.com/static/css/main.8b2831db.css.map",
-    "main.2cdfb42e.js.map": "/gargo.com/static/js/main.2cdfb42e.js.map",
+    "main.2643911c.js.map": "/gargo.com/static/js/main.2643911c.js.map",
     "872.4045954f.chunk.js.map": "/gargo.com/static/js/872.4045954f.chunk.js.map",
     "227.f885fb42.chunk.js.map": "/gargo.com/static/js/227.f885fb42.chunk.js.map",
     "526.8c9cda2c.chunk.js.map": "/gargo.com/static/js/526.8c9cda2c.chunk.js.map",
@@ -40,6 +39,6 @@
   },
   "entrypoints": [
     "static/css/main.8b2831db.css",
-    "static/js/main.2cdfb42e.js"
+    "static/js/main.2643911c.js"
   ]
 }
