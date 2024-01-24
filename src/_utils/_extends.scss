@@ -54,7 +54,7 @@
   @include heading-(18px, 300, $color-gray);
 
   @include onLaptop {
-    font-size: 32px;
+    font-size: 24px;
   }
 }
 %heading-about-bold {
