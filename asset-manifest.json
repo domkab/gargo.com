@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/gargo.com/static/css/main.345b6c2e.css",
-    "main.js": "/gargo.com/static/js/main.30f712c6.js",
+    "main.css": "/gargo.com/static/css/main.8b2831db.css",
+    "main.js": "/gargo.com/static/js/main.2cdfb42e.js",
     "static/js/872.4045954f.chunk.js": "/gargo.com/static/js/872.4045954f.chunk.js",
     "static/js/227.f885fb42.chunk.js": "/gargo.com/static/js/227.f885fb42.chunk.js",
     "static/js/526.8c9cda2c.chunk.js": "/gargo.com/static/js/526.8c9cda2c.chunk.js",
@@ -26,16 +26,11 @@
     "static/media/nextvelo.svg": "/gargo.com/static/media/nextvelo.8a82bda53bbbc15da6094ce309838d36.svg",
     "static/media/proeyewear.svg": "/gargo.com/static/media/proeyewear.0aade6bb97904c6ee1e92b6d085ea581.svg",
     "static/media/hype6.svg": "/gargo.com/static/media/hype6.feb072856795f077c8669f88c3862dcf.svg",
-    "static/media/ig.svg": "/gargo.com/static/media/ig.bd64f6859d296542f13f61f8c1f4c3b9.svg",
-    "static/media/discord.svg": "/gargo.com/static/media/discord.20517f9fa7b229d9e5358a29cc45e368.svg",
-    "static/media/x.svg": "/gargo.com/static/media/x.abef8ae40cd08c60359b8f061dcccb66.svg",
-    "static/media/phone.svg": "/gargo.com/static/media/phone.e5144cc6bf3c850a9a63549362a3fb60.svg",
-    "static/media/mail.svg": "/gargo.com/static/media/mail.7571432efc9169fb25002b308915fd2e.svg",
     "index.html": "/gargo.com/index.html",
     "static/media/chevron-down.svg": "/gargo.com/static/media/chevron-down.d1d85b13467309a35a1458d54cbe736d.svg",
     "static/media/arrowRightIcon.svg": "/gargo.com/static/media/arrowRightIcon.dd1484858e702fd654f6.svg",
-    "main.345b6c2e.css.map": "/gargo.com/static/css/main.345b6c2e.css.map",
-    "main.30f712c6.js.map": "/gargo.com/static/js/main.30f712c6.js.map",
+    "main.8b2831db.css.map": "/gargo.com/static/css/main.8b2831db.css.map",
+    "main.2cdfb42e.js.map": "/gargo.com/static/js/main.2cdfb42e.js.map",
     "872.4045954f.chunk.js.map": "/gargo.com/static/js/872.4045954f.chunk.js.map",
     "227.f885fb42.chunk.js.map": "/gargo.com/static/js/227.f885fb42.chunk.js.map",
     "526.8c9cda2c.chunk.js.map": "/gargo.com/static/js/526.8c9cda2c.chunk.js.map",
@@ -44,7 +39,7 @@
     "357.d86fb59a.chunk.js.map": "/gargo.com/static/js/357.d86fb59a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.345b6c2e.css",
-    "static/js/main.30f712c6.js"
+    "static/css/main.8b2831db.css",
+    "static/js/main.2cdfb42e.js"
   ]
 }
