@@ -9,13 +9,16 @@
     flex-flow: column wrap;
     align-items: center;
     max-width: 320px;
+    margin-bottom: 40px;
 
     @include onTablet {
       max-width: 608px;
+      margin-bottom: 60px;
     }
 
     @include onLaptop {
       max-width: 1220px;
+      margin-bottom: 160px;
     }
   }
 
@@ -63,7 +66,7 @@
   margin-bottom: 60px;
 
   &:last-child {
-    margin-bottom: 36px;
+    margin-bottom: 0;
   }
 
   &__image {

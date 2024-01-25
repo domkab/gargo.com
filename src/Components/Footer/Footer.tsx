@@ -8,10 +8,19 @@ export const Footer: React.FC = () => {
   return (
     <footer className="footer">
       <h2 className="footer__headings">
-        <span className="footer__heading--light">Get</span>
-        <span className="footer__heading">{' '}in Touch.</span>
+        <span
+          className="footer__heading footer__heading--light">
+          Get
+        </span>
 
-        <p className="footer__desc">So that we can talk more about...</p>
+        <span
+          className="footer__heading">
+          {' '}in Touch.
+        </span>
+
+        <p className="footer__desc">
+          So that we can talk more about...
+        </p>
       </h2>
 
       <ul className="footer__contacts" aria-label="Contact methods">

@@ -4,7 +4,7 @@ import { About } from './Components/About';
 import { Header } from './Components/Header';
 import { Hero } from './Components/Hero';
 import { Works } from './Components/Works';
-// import { Footer } from './Components/Footer';
+import { Footer } from './Components/Footer';
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -112,7 +112,7 @@ const App: React.FC = () => {
       <Hero />
       <Works />
       <About />
-      {/* <Footer /> */}
+      <Footer />
 
     </main>
   );

@@ -20,6 +20,10 @@
     }
 
     margin-bottom: 4px;
+
+    @include onLaptop {
+      width: 588px;
+    }
   }
 
   &__desc {
@@ -42,5 +46,3 @@
     }
   }
 }
-
-// padding: 0 50px;

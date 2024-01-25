@@ -9,12 +9,13 @@
   &__content {
     @include onLaptop {
       @include useGrid(12, 32px);
+      max-height:888px ;
     }
   }
 
   &__spline {
     width: 465px;
-    height: 800px;
+    // height: 800px;
     grid-column: 4 / 9;
   }
 
@@ -43,7 +44,7 @@
         display: inline-block;
         text-align: start;
         margin: auto 0;
-        width: 348px;
+        // width: 348px;
       }
     }
 
