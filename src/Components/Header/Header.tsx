@@ -6,7 +6,7 @@ export const Header: React.FC = () => {
 
   const handleNavClick = (sectionId: string, event: React.MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault();
-    setActiveSection(sectionId); // Update the active section state
+    setActiveSection(sectionId);
 
     const section = document.getElementById(sectionId);
 

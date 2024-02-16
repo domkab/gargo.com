@@ -14,10 +14,6 @@
     margin: 20px 0 25px 0;
   }
 
-  // &__nav {
-  //   // Styles for the navigation bar
-  // }
-
   &__nav-list {
     list-style: none;
     padding: 0;
@@ -25,18 +21,10 @@
     display: flex;
   }
 
-  // &__nav-item {
-  //   &:not(:last-child) {
-  //     // margin-right: 20px;
-  //   }
-  // }
-
   &__nav-link {
     position: relative;
     @extend %heading-header-semi-bold;
     padding: 10px 16px 8px 16px;
-
-    // color: $color-white;
 
     @include transition-effect((color));
 
