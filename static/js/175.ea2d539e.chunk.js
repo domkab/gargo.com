@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkgargo_com=self.webpackChunkgargo_com||[]).push([[175],{175:(t,a,c)=>{async function e(t){let a=!(arguments.length>1&&void 0!==arguments[1])||arguments[1];await t.addInteractor("particlesAttract",(async t=>{const{Attractor:a}=await c.e(2323).then(c.bind(c,2323));return new a(t)}),a)}c.d(a,{loadParticlesAttractInteraction:()=>e})}}]);
+//# sourceMappingURL=175.ea2d539e.chunk.js.map
