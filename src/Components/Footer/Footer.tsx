@@ -1,8 +1,8 @@
-import mail from '../../icons/mail.svg'
-import instagram from '../../icons/ig.svg';
-import x from '../../icons/x.svg';
-import discord from '../../icons/discord.svg'
-import phone from '../../icons/phone.svg'
+import Mail from '../../icons/Mail/Mail';
+import Instagram from '../../icons/Instagram/Instagram';
+import X from '../../icons/X/X';
+import Discord from '../../icons/Discord/Discord';
+import Phone from '../../icons/Phone/Phone';
 
 export const Footer: React.FC = () => {
   return (
@@ -26,46 +26,46 @@ export const Footer: React.FC = () => {
       <ul className="footer__contacts" aria-label="Contact methods">
         <li className="footer__contact">
           <a
-            href="/"
+            href="mailto:laurynas.gargasas@gmail.com"
             aria-label="Email"
           >
-            <img src={mail} alt="Email" />
+            <Mail className="footer__contact-icon"/>
           </a>
         </li>
 
         <li className="footer__contact">
           <a
-            href="/"
+            href="https://www.instagram.com/gargo_productions/?igsh=MWNlbmg2endoemVtbA%3D%3D"
             aria-label="Instagram"
           >
-            <img src={instagram} alt="Instagram" />
+            <Instagram className="footer__contact-icon"/>
           </a>
         </li>
 
         <li className="footer__contact">
           <a
-            href="/"
+            href="https://twitter.com/gargo_ll?t=5R7tXis2Qy8fS21jmBe0Ew&s=09"
             aria-label="X"
           >
-            <img src={x} alt="X" />
+            <X className="footer__contact-icon"/>
           </a>
         </li>
 
         <li className="footer__contact">
           <a
-            href="/"
+            href="https://discordapp.com/users/gargo666"
             aria-label="discord"
           >
-            <img src={discord} alt="discord" />
+            <Discord className="footer__contact-icon"/>
           </a>
         </li>
 
         <li className="footer__contacts-contact">
           <a
-            href="/"
+            href="+37061550539"
             aria-label="phone"
           >
-            <img src={phone} alt="phone" />
+            <Phone className="footer__contact-icon"/>
           </a>
         </li>
       </ul>
