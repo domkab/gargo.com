@@ -1,5 +1,6 @@
 {
   "name": "gargo.com",
+  "homepage": ",",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -30,7 +31,6 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://domkab.github.io/gargo.com",
   "eslintConfig": {
     "extends": [
       "react-app",
