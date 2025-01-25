@@ -4,18 +4,26 @@ import './App.scss';
 import App from './App';
 // import { HashRouter as Router } from 'react-router-dom';
 
-const rootElement = document.getElementById('root');
+function initializeReactApp() {
+  const rootElement = document.getElementById('root');
+    
+  if (!rootElement) {
+    // eslint-disable-next-line no-console
+    console.error("Could not find root element");
+    return; // Exit if the root element is not found
+  }
+    
+  const root = ReactDOM.createRoot(rootElement);
 
-if (!rootElement) {
-  throw new Error("Could not find root element");
+  root.render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  );
 }
-const root = ReactDOM.createRoot(rootElement);
 
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+// Wait for the DOM to be fully loaded
+document.addEventListener('DOMContentLoaded', initializeReactApp);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
