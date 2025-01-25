@@ -1,0 +1,169 @@
+.works {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    max-width: 320px;
+    margin-bottom: 40px;
+
+    @include onTablet {
+      max-width: 608px;
+      margin-bottom: 60px;
+    }
+
+    @include onLaptop {
+      max-width: 1220px;
+      margin-bottom: 160px;
+    }
+  }
+
+  &__title {
+    margin-bottom: 40px;
+
+    @include onLaptop {
+      align-self: flex-start;
+    }
+
+    &--light {
+      @extend %heading-works-light;
+    }
+
+    &--bold {
+      @extend %heading-works-bold;
+    }
+  }
+}
+
+.work {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+
+  @include onLaptop {
+    @include useGrid(2, 32px);
+    grid-auto-flow: dense;
+  }
+
+  &__wrapper-description-desktop {
+    &--1 {
+      grid-column: 2 / 3;
+    }
+
+    &--2 {
+      grid-column: 1 / 2;
+    }
+
+    @include onLaptopL {
+      width: 594px;
+    }
+  }
+
+  margin-bottom: 60px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__image {
+    width: 320px;
+    height: 260px;
+    margin-bottom: 32px;
+    object-fit: cover;
+    border-radius: 16px;
+
+    @include onTablet {
+      width: 608px;
+    }
+
+    @include onLaptop {
+      width: 594px;
+      height: 490px;
+      margin: 0 auto;
+      &--1 {
+        grid-column: 1 / 2;
+      }
+
+      &--2 {
+        grid-column: 2 / 3;
+      }
+    }
+  }
+
+  &__title {
+    @extend %heading-work-bold;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+
+    @include onTablet {
+      align-self: flex-start;
+    }
+  }
+
+  &__description {
+    margin-bottom: 20px;
+    &--light {
+      @extend %heading-work-light;
+    }
+
+    &--bold {
+      @extend %heading-work-bold;
+      font-size: 18px;
+      @include onLaptop {
+        font-size: 32px;
+      }
+      color: $color-white;
+    }
+  }
+
+  &__category {
+    display: flex;
+    @extend %heading-work-light;
+    font-size: 14px;
+    margin-bottom: 24px;
+
+    @include onTablet {
+      align-self: flex-start;
+      font-size: 18px;
+    }
+  }
+
+  &__button {
+    @include flex-center;
+    @extend %heading-work-light;
+    font-size: 10px;
+    color: $color-white;
+    margin: 0 auto;
+    width: 96px;
+    height: 24px;
+    padding: 6px 16px;
+    text-align: center;
+    border: 1px solid $color-white;
+    border-radius: 100px;
+    @include transition-effect(background-color);
+
+    @include onLaptop {
+      display: inline-flex;
+      width: 130px;
+      font-size: 16px;
+
+      &::after {
+        content: '';
+        background-image: url('../../icons/arrowRightIcon.svg');
+        background-size: cover;
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+      }
+    }
+
+    &:hover, &:active {
+      background-color: $color-primary;
+    }
+  }
+}

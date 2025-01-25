@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+
+  @include onLaptop {
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding: 0 80px;
+  }
+
+  &__logo {
+    margin: 20px 0 25px 0;
+  }
+
+  &__nav-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+
+  &__nav-link {
+    position: relative;
+    @extend %heading-header-semi-bold;
+    padding: 10px 16px 8px 16px;
+
+    @include transition-effect((color));
+
+    &:hover, &--active {
+      color: $color-primary;
+
+      &::after {
+        position: absolute;
+        content: '';
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 10px;
+        background-color: antiquewhite;
+        width: 9px;
+        height: 2.5px;
+      }
+    }
+  }
+}

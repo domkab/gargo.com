@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+
+  @include onTablet {
+    flex-flow: column wrap;
+    align-items: center;
+  }
+
+  &__headings {
+    margin-bottom: 50px;
+  }
+
+  &__heading {
+    @extend %heading-footer-bold;
+
+    &--light {
+      @extend %heading-footer-light;
+    }
+
+    margin-bottom: 4px;
+
+    @include onLaptop {
+      width: 588px;
+    }
+  }
+
+  &__desc {
+    text-align: center;
+    @include heading-(12px, 300, $color-gray);
+  }
+
+  &__contacts {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    padding: 0;
+    margin: 0;
+    margin-bottom: 84px;
+  }
+
+  &__contact {
+    &:not(:last-child) {
+      margin-right: 26px;
+    }
+
+    &-icon {
+      path {
+        transition: fill 0.3s ease-in-out;
+      }
+      &:hover {
+        transition: scale 0.5s ease-out;
+        scale: 0.9;
+        path {
+          fill: $color-primary !important;
+        }
+      }
+    }
+  }
+}

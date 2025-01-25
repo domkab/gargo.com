@@ -1,0 +1,114 @@
+.about {
+  margin: 0 auto 50px auto;
+  width: 324px;
+
+  @include onLaptop {
+    width: auto;
+  }
+
+  &__content {
+    @include onLaptop {
+      @include useGrid(12, 32px);
+      max-height:888px ;
+    }
+  }
+
+  &__spline {
+    width: 465px;
+    // height: 800px;
+    grid-column: 4 / 9;
+  }
+
+  &__intro {
+    display: flex;
+    margin: auto 0;
+    justify-content: center;
+    flex-flow: row wrap;
+    &-title {
+      @extend %heading-about-bold;
+      margin-bottom: 16px;
+    }
+
+    &-desc {
+      text-align: center;
+      &--light {
+        @extend %heading-about-light;
+      }
+
+      &--bold {
+        @extend %heading-about-bold;
+        // font-size: 12px;
+      }
+
+      @include onLaptop {
+        display: inline-block;
+        text-align: start;
+        margin: auto 0;
+        // width: 348px;
+      }
+    }
+
+    @include onLaptop {
+      width: 384px;
+      height: 304px;
+      justify-content: flex-start;
+      grid-column: 1 / 4;
+    }
+  }
+
+  &__skills {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 20px;
+    gap: 10px;
+
+    @include onLaptop {
+      grid-column: 9 / 12;
+      justify-content: center;
+      padding: 0;
+      width: 212px;
+    }
+  }
+
+  &__skill-container {
+    display: flex;
+    justify-content: start;
+    max-width: 324px;
+
+    @include onLaptop {
+      width: 288px;
+    }
+
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 10px;
+    }
+
+    .CircularProgressbar {
+      width: 50px;
+      vertical-align: baseline;
+      &-text {
+        fill: $color-white !important;
+        @include heading-(12px, 300, $color-gray);
+      }
+
+      @include onLaptop {
+        width: 60px;
+      }
+    }
+  }
+
+  &__skill {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+  }
+
+  &__skill-name {
+    @extend %heading-about-bold;
+    font-weight: 500;
+    @include onLaptop {
+      font-size: 24px;
+    }
+  }
+}
