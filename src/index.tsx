@@ -1,8 +1,6 @@
-import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './App.scss';
 import App from './App';
-// import { HashRouter as Router } from 'react-router-dom';
 
 function initializeReactApp() {
   const rootElement = document.getElementById('root');
@@ -10,15 +8,13 @@ function initializeReactApp() {
   if (!rootElement) {
     // eslint-disable-next-line no-console
     console.error("Could not find root element");
-    return; // Exit if the root element is not found
+    return;
   }
-    
+
   const root = ReactDOM.createRoot(rootElement);
 
   root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
+    <App />
   );
 }
 
