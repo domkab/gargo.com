@@ -1,23 +1,34 @@
 import nextveloProeyewear480 from '../../images/nextvelo-proeyewear480.png';
-import nextveloProeyewear1440 from '../../images/nextvelo-proeyewear1440.png';
 import nextveloProeyewear1920 from '../../images/nextvelo-proeyewear1920.png';
 import videoProduction480 from '../../images/video-production480.png';
-import videoProduction1440 from '../../images/video-production1440.png';
 import videoProduction1920 from '../../images/video-production1920.png';
 import motoInn480 from '../../images/moto-inn480.png';
-import motoInn1440 from '../../images/moto-inn1440.png';
 import motoInn1920 from '../../images/moto-inn1920.png';
 import hypeSix480 from '../../images/hype-six480.png';
-import hypeSix1440 from '../../images/hype-six1440.png';
 import hypeSix1920 from '../../images/hype-six1920.png';
-import { WorkItem } from '../../types';
+
+export type DescriptionPart = {
+  text: string;
+  isBold: boolean;
+};
+
+export type WorkItem = {
+  type: string;
+  images: {
+    small: string;
+    large: string;
+  };
+  title: string;
+  description: DescriptionPart[];
+  category: string;
+  link: string;
+};
 
 export const workItems: WorkItem[] = [
   {
     type: '1',
     images: {
       small: nextveloProeyewear480,
-      medium: nextveloProeyewear1440,
       large: nextveloProeyewear1920
     },
     title: 'nexvelo x pro eyewear',
@@ -32,7 +43,6 @@ export const workItems: WorkItem[] = [
     type: '2',
     images: {
       small: videoProduction480,
-      medium: videoProduction1440,
       large: videoProduction1920
     },
     title: 'video production+',
@@ -47,7 +57,6 @@ export const workItems: WorkItem[] = [
     type: '1',
     images: {
       small: motoInn480,
-      medium: motoInn1440,
       large: motoInn1920
     },
     title: 'moto inn',
@@ -62,7 +71,6 @@ export const workItems: WorkItem[] = [
     type: '2',
     images: {
       small: hypeSix480,
-      medium: hypeSix1440,
       large: hypeSix1920,
     },
     title: 'hype6',

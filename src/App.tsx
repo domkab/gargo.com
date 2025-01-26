@@ -38,7 +38,7 @@ const App: React.FC = () => {
           value: "transparent",
         },
       },
-      fpsLimit: 120,
+      fpsLimit: 30,
       interactivity: {
         events: {
           onClick: {

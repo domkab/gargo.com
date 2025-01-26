@@ -51,78 +51,57 @@
     flex-flow: column wrap;
     justify-content: center;
 
+    @include onLaptop {
+      flex-direction: row;
+      grid-column: 1 / 13;
+    }
+
     &-container {
       @include onLaptop {
         @include useGrid(12, 32px);
+        grid-column: 1 / 13;
       }
-    }
-
-    @include onLaptop {
-      grid-column: 1 / 13;
     }
   }
 
   &__client {
-    @include onLaptopL {
-
-      &--nextvelo {
-        margin-left: 0;
-        width: 216px;
-        height: 36px;
-      }
-
-      &--videoproduction {
-        width: 216px;
-        height: 36px;
-      }
-
-      &--motoinn {
-        width: 84px;
-        height: 124px;
-      }
-
-      &--proeyewear {
-        width: 296px;
-        height: 46px;
-      }
-
-      &--hype6 {
-        width: 179px;
-        height: 52px;
-      }
-    }
-  }
-
-  &__client-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    flex-basis: 100%;
-    margin-bottom: 20px;
-
     @include onLaptop {
-      margin-bottom: 226px;
+      // width: 216px;
+      // height: 54px;
     }
 
-    .hero__client {
-      margin-right: 20px;
+    &-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      flex-basis: 100%;
+      margin-bottom: 20px;
 
       @include onLaptop {
-        margin: 0 auto;
+        @include useGrid(5, 32px);
+        grid-column: 1 / 5;
+      }
 
-        &:first-child {
-          margin-left: 0;
+      .hero__client {
+        margin-right: 20px;
+
+        @include onLaptop {
+          margin: 0 auto;
+
+          &:first-child {
+            margin-left: 0;
+          }
+        }
+
+        &:last-child {
+          margin-right: 0;
         }
       }
 
-      &:last-child {
-        margin-right: 0;
+      &--last {
+        margin-bottom: 0;
       }
-    }
-
-    &--last {
-      margin-bottom: 0;
     }
   }
 }
