@@ -57,6 +57,7 @@
     }
 
     &-container {
+      grid-gap: 20px;
       @include onLaptop {
         @include useGrid(12, 32px);
         grid-column: 1 / 13;
@@ -65,9 +66,18 @@
   }
 
   &__client {
+    margin-bottom: 0.5rem;
+
+    &--rigobs {
+      margin-right: 1rem;
+    }
+
     @include onLaptop {
-      // width: 216px;
-      // height: 54px;
+      margin: 0 auto;
+
+      &--rigobs {
+        margin-right: 0;
+      }
     }
 
     &-container {
@@ -83,19 +93,10 @@
         grid-column: 1 / 5;
       }
 
-      .hero__client {
-        margin-right: 20px;
-
+      &--last {
         @include onLaptop {
-          margin: 0 auto;
-
-          &:first-child {
-            margin-left: 0;
-          }
-        }
-
-        &:last-child {
-          margin-right: 0;
+          @include useGrid(4, 32px);
+          grid-column: 1 / 4;
         }
       }
 
