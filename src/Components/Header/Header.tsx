@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import logo from '../../icons/logo.svg';
+import logo from '../../icons/logo.png';
 
 export const Header: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');
@@ -58,19 +58,25 @@ export const Header: React.FC = () => {
           <li className="header__nav-item">
             <a href="#home"
               onClick={e => handleNavClick('home', e)}
-              className={getNavLinkClass('home')}>HOME
+              className={getNavLinkClass('home')}
+            >
+              HOME
             </a>
           </li>
           <li className="header__nav-item">
             <a href="#work"
               onClick={e => handleNavClick('work', e)}
-              className={getNavLinkClass('work')}>WORK
+              className={getNavLinkClass('work')}
+            >
+              WORK
             </a>
           </li>
           <li className="header__nav-item">
             <a href="#about"
               onClick={e => handleNavClick('about', e)}
-              className={getNavLinkClass('about')}>ABOUT
+              className={getNavLinkClass('about')}
+            >
+              ABOUT
             </a>
           </li>
         </ul>

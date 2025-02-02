@@ -1,11 +1,8 @@
 import nextveloProeyewear480 from '../../images/nextvelo-proeyewear480.png';
-import nextveloProeyewear1920 from '../../images/nextvelo-proeyewear1920.png';
-import videoProduction480 from '../../images/video-production480.png';
-import videoProduction1920 from '../../images/video-production1920.png';
-import motoInn480 from '../../images/moto-inn480.png';
-import motoInn1920 from '../../images/moto-inn1920.png';
-import hypeSix480 from '../../images/hype-six480.png';
-import hypeSix1920 from '../../images/hype-six1920.png';
+import nextveloProeyewear1920 from '../../images/nextvelo-proeyewear1920.webp';
+import biogutoImage from '../../images/Bioguto-1920x1080.jpg';
+import vpImage from '../../images/vpImage.jpg';
+import impulsImage from '../../images/ImpulsImage.jpg';
 
 export type DescriptionPart = {
   text: string;
@@ -22,66 +19,74 @@ export type WorkItem = {
   description: DescriptionPart[];
   category: string;
   link: string;
+  client: string;
 };
 
 export const workItems: WorkItem[] = [
   {
     type: '1',
     images: {
-      small: nextveloProeyewear480,
-      large: nextveloProeyewear1920
+      small: biogutoImage,
+      large: biogutoImage
     },
-    title: 'nexvelo x pro eyewear',
+    title: 'bioguto',
     description: [
-      { text: 'MTB pros in action, flaunting BLITZ sports glasses', isBold: false },
-      { text: ' 3D animation finale highlighting the sleek design.', isBold: true }
+      {
+        text: `A 3D promotional video showcasing Bioguto's vitamin supplements.`,
+        isBold: false
+      },
+      {
+        text: ` The animation emphasizes health and vitality through natural textures, vibrant droplets, and soft lighting.`,
+        isBold: true
+      }
     ],
-    category: 'Videography, Video Editing, 3D Animation',
-    link: 'https://www.instagram.com/nextvelo_com/reel/Cz3_oPsNMSP/',
+    category: `Responsibilities: Modelling, texturing & shading, animation, lighting, compositing`,
+    client: 'For: NOIR production',
+    link: `https://www.behance.net/gallery/217864339/Bioguto-Vitamin-A-D3-K2`,
   },
   {
     type: '2',
     images: {
-      small: videoProduction480,
-      large: videoProduction1920
+      small: vpImage,
+      large: vpImage
     },
-    title: 'video production+',
+    title: 'Vilniaus paukštynas',
     description: [
-      { text: '3D animation unfolds as the VP+ logo glides through ', isBold: false },
-      { text: 'a realm of luminous orbs and smaller VP+ insignias.', isBold: true },
+      { text: '2D/3D animation of Vilniaus paukštynas history, celebrating their 60th anniversary ', isBold: false },
+      { text: `that emphasizes the company's journey over six decades.`, isBold: true },
     ],
-    category: '3D animation',
-    link: 'https://x.com/ItsJackCole/status/1725167281431302454?s=20'
+    category: 'Responsibilities: 3D chicken animation, composition, color correction',
+    client: 'For: NOIR production',
+    link: 'https://www.youtube.com/watch?v=4mv92g7csEY'
   },
   {
     type: '1',
     images: {
-      small: motoInn480,
-      large: motoInn1920
+      small: impulsImage,
+      large: impulsImage
     },
-    title: 'moto inn',
+    title: 'impuls',
     description: [
-      { text: 'Drone-shot video unveils new motorcycle shops ', isBold: false },
-      { text: 'with cinematic aerial views.', isBold: true },
+      { text: '3D melting ice-cream animation for a sports center ', isBold: false },
+      { text: 'emphasizing the start of summer.', isBold: true },
     ],
-    category: 'Videography, Video Editing',
+    category: 'Responsibilities: 3D modelling, texturing & shading, 3D animation ',
+    client: 'For: NOIR production',
     link: 'https://www.instagram.com/moto.inn/reel/Csf-CzMM8nz'
   },
   {
     type: '2',
     images: {
-      small: hypeSix480,
-      large: hypeSix1920,
+      small: nextveloProeyewear480,
+      large: nextveloProeyewear1920
     },
-    title: 'hype6',
+    title: 'gearro x pro eyewear',
     description: [
-      {
-        text: 'Creating a T-shirt design and translating it into 3D space, merging creativity and ',
-        isBold: false
-      },
-      { text: 'technical skills for impactful marketing representation.', isBold: true },
+      { text: 'MTB pros in action, flaunting BLITZ sports glasses', isBold: false },
+      { text: ' 3D animation finale highlighting the sleek design.', isBold: true }
     ],
-    category: 'Graphic Design, 3D Modeling',
-    link: 'https://www.instagram.com/p/Cy286HQts8G/?igsh=MnBnMGpqc3RreHhx'
+    category: 'Videography, Video Editing, 3D Animation',
+    client: 'For: Gearro',
+    link: 'https://www.instagram.com/nextvelo_com/reel/Cz3_oPsNMSP/',
   },
 ];

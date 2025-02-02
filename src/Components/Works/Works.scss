@@ -151,11 +151,7 @@
       width: 130px;
       font-size: 16px;
 
-      &::after {
-        content: '';
-        background-image: url('../../icons/arrowRightIcon.svg');
-        background-size: cover;
-        display: inline-block;
+      &--icon {
         width: 24px;
         height: 24px;
         margin-left: 8px;

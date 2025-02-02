@@ -1,24 +1,14 @@
 import { useEffect, useRef, useState } from 'react';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
-import 'react-circular-progressbar/dist/styles.css';
 import Spline from '@splinetool/react-spline';
-import useWindowSize from '../../_utils/useWindowSize';
-
-interface Skill {
-  name: string;
-  percentage: number;
-}
+import blenderLogo from '../../icons/skills/Blender_logo.svg';
+import MDLogo from '../../icons/skills/MD_logo.svg';
+import davinciLogo from '../../icons/skills/Davinci_logo.svg';
+import aeLogo from '../../icons/skills/AE_logo.svg';
+import emberLogo from '../../icons/skills/embergen-icon.svg';
+import psLogo from '../../icons/skills/Ps_logo.svg';
 
 export const About: React.FC = () => {
-  const [width] = useWindowSize();
-  const skills: Skill[] = [
-    { name: 'DAVINCI RESOLVE', percentage: 90 },
-    { name: 'BLENDER 3D', percentage: 60 },
-    { name: 'PHOTOSHOP', percentage: 85 },
-  ];
-
   const aboutRef = useRef<HTMLDivElement>(null);
-  const [visible, setVisible] = useState(false);
   const [loaded, setLoaded] = useState(false);
   const [splineLoaded, setSplineLoaded] = useState(false);
 
@@ -27,7 +17,6 @@ export const About: React.FC = () => {
       ([entry]) => {
 
         if (entry.isIntersecting && !loaded && splineLoaded) {
-          setVisible(true);
           setLoaded(true);
         }
       },
@@ -46,89 +35,42 @@ export const About: React.FC = () => {
   }, [loaded, splineLoaded]);
 
   return (
-    width > 767 ? (
-      <section id="about" className="about" ref={aboutRef}>
-        <div className="container">
-          <div className="about__content">
-            <article className="about__intro">
-              <h3 className="about__intro-title">A bit about me</h3>
-              <p className="about__intro-desc">
-                <span className="about__intro-desc--light">
-                  I am a Multimedia producer specializing in video production, 3D animation,
-                  and digital art design.
-                </span>
-                <span className="about__intro-desc--bold">
-                  {' '}Transforming ideas into visually compelling experiences.
-                </span>
-              </p>
-            </article>
-            <Spline
-              className="about__spline"
-              scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
-              onLoad={() => setSplineLoaded(true)}
-            />
-            {splineLoaded && (
+    <section id="about" className="about" ref={aboutRef}>
+      <div className="container">
+        <div className="about__content">
+          <article className="about__intro">
+            <h3 className="about__intro-title">A bit about me</h3>
+            <p className="about__intro-desc">
+              <span className="about__intro-desc--light">
+                I am a 3D artist specializing in animation, modeling & texturing, rendering & compositing
+              </span>
+              <span className="about__intro-desc--bold">
+                {' '}Transforming ideas into visually compelling experiences.
+              </span>
+            </p>
+          </article>
+          <Spline
+            className="about__spline"
+            scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
+            onLoad={() => setSplineLoaded(true)}
+          />
+          {splineLoaded && (
+            <div className="about__skills--container">
               <div className="about__skills">
-                {skills.map(skill => (
-                  <div key={skill.name} className="about__skill-container">
-                    <CircularProgressbar
-                      value={visible ? skill.percentage : 0}
-                      text={`${visible ? skill.percentage : 0}%`}
-                      styles={buildStyles({
-                        pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
-                        trailColor: 'transparent',
-                      })}
-                      className="about__skill"
-                    />
-                    <span className="about__skill-name">{skill.name}</span>
-                  </div>
-                ))}
+                <img className="about__skill" src={blenderLogo} alt="Blender" />
+                <img className="about__skill" src={MDLogo} alt="MD" />
+                <img className="about__skill" src={davinciLogo} alt="Blender" />
               </div>
-            )}
-          </div>
-        </div>
-      </section>
-    ) : (
-      <section id="about" className="about" ref={aboutRef}>
-        <div className="container">
-          <div className="about__content">
-            <article className="about__intro">
-              <h3 className="about__intro-title">A bit about me</h3>
-              <p className="about__intro-desc">
-                <span className="about__intro-desc--light">
-                  I am a Multimedia producer specializing in video production, 3D animation,
-                  and digital art design.
-                </span>
-                <span className="about__intro-desc--bold">
-                  {' '}Transforming ideas into visually compelling experiences.
-                </span>
-              </p>
-              <Spline
-                // className="about__spline"
-                scene="https://prod.spline.design/Wujrfd0K5fBYa-gR/scene.splinecode"
-                onLoad={() => setSplineLoaded(true)}
-              />
-            </article>
-            {splineLoaded && (
+
               <div className="about__skills">
-                {skills.map(skill => (
-                  <div key={skill.name} className="about__skill-container">
-                    <CircularProgressbar
-                      value={visible ? skill.percentage : 0}
-                      text={`${visible ? skill.percentage : 0}%`}
-                      styles={buildStyles({
-                        pathTransition: visible ? 'stroke-dashoffset 2s ease-in-out' : 'none',
-                        trailColor: 'transparent',
-                      })}
-                      className="about__skill"
-                    />
-                    <span className="about__skill-name">{skill.name}</span>
-                  </div>
-                ))}
+                <img className="about__skill" src={aeLogo} alt="Blender" />
+                <img className="about__skill" src={emberLogo} alt="Blender" />
+                <img className="about__skill" src={psLogo} alt="Blender" />
               </div>
-            )}
-          </div>
+            </div>
+          )}
         </div>
-      </section>
-    ))
+      </div>
+    </section>
+  )
 }

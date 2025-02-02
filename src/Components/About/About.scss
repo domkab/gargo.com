@@ -7,15 +7,15 @@
   }
 
   &__content {
+    align-items: center;
     @include onLaptop {
       @include useGrid(12, 32px);
-      max-height:888px ;
+      max-height: 306px;
     }
   }
 
   &__spline {
     width: 465px;
-    // height: 800px;
     grid-column: 4 / 9;
   }
 
@@ -58,57 +58,33 @@
 
   &__skills {
     display: flex;
-    flex-flow: column wrap;
-    padding: 0 20px;
     gap: 10px;
 
+    &--container {
+      display: flex;
+      align-content: center;
+      flex-flow: column wrap;
+      margin-top: 24px;
+
+      @include onLaptop {
+        grid-column: 9 / 12;
+        flex-flow: row wrap;
+        margin-top: 0;
+        height: 170px;
+      }
+    }
+
     @include onLaptop {
-      grid-column: 9 / 12;
       justify-content: center;
+      align-items: center;
+      align-content: stretch;
       padding: 0;
       width: 212px;
     }
   }
 
-  &__skill-container {
-    display: flex;
-    justify-content: start;
-    max-width: 324px;
-
-    @include onLaptop {
-      width: 288px;
-    }
-
-    align-items: center;
-    &:not(:last-child) {
-      margin-bottom: 10px;
-    }
-
-    .CircularProgressbar {
-      width: 50px;
-      vertical-align: baseline;
-      &-text {
-        fill: $color-white !important;
-        @include heading-(12px, 300, $color-gray);
-      }
-
-      @include onLaptop {
-        width: 60px;
-      }
-    }
-  }
-
   &__skill {
-    width: 50px;
-    height: 50px;
-    margin-right: 20px;
-  }
-
-  &__skill-name {
-    @extend %heading-about-bold;
-    font-weight: 500;
-    @include onLaptop {
-      font-size: 24px;
-    }
+    width: 60px;
+    height: 60px;
   }
 }

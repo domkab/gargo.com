@@ -1,4 +1,5 @@
 import { workItems } from './WorkItems';
+import chevron from '../../icons/arrowRightIcon.svg';
 
 export const Works: React.FC = () => {
   return (
@@ -7,7 +8,7 @@ export const Works: React.FC = () => {
         <div className="works__content">
           <h2 className="works__title">
             <span className="works__title--light">Selected </span>
-            <span className="works__title--bold">Works</span>
+            <span className="works__title--bold">Projects</span>
           </h2>
 
           {workItems.map((item, index) => (
@@ -39,13 +40,18 @@ export const Works: React.FC = () => {
                   {item.category}
                 </p>
 
+                <p className="work__category">
+                  {item.client}
+                </p>
+
                 <a
                   href={item.link}
                   className="work__button"
                   rel="noopener noreferrer"
                   target="_blank"
                 >
-                  VIEW WORK
+                  VIEW
+                  <img className='work__button--icon' src={chevron} alt="chevron icon pointing right" />
                 </a>
               </div>
             </article>
