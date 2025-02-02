@@ -4,20 +4,20 @@ import { Header } from './Components/Header';
 import { Hero } from './Components/Hero';
 import { Works } from './Components/Works';
 import { Footer } from './Components/Footer';
+import { Loader } from './Components/Loader/Loader';
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import {
-  type Container,
   type ISourceOptions,
 } from "@tsparticles/engine";
 
 import { loadSlim } from "@tsparticles/slim";
 
 const App: React.FC = () => {
-  console.log('rendering app');
-
   const [init, setInit] = useState(false);
+  const [isSplineLoaded, setSplineLoaded] = useState(false);
+  const [isAppReady, setAppReady] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async engine => {
@@ -27,8 +27,14 @@ const App: React.FC = () => {
     });
   }, []);
 
-  const particlesLoaded = async (container?: Container): Promise<void> => {
-    console.log(container);
+  useEffect(() => {
+    if (init && isSplineLoaded) {
+      setTimeout(() => setAppReady(true), 500);
+    }
+  }, [init, isSplineLoaded]);
+
+  const handleSplineLoad = () => {
+    setSplineLoaded(true);
   };
 
   const options: ISourceOptions = useMemo(
@@ -100,17 +106,17 @@ const App: React.FC = () => {
 
   return (
     <main className="App">
+      {!isAppReady && <Loader />}
       {init && (
         <Particles
           id="tsparticles"
-          particlesLoaded={particlesLoaded}
           options={options}
         />
       )}
       <Header />
       <Hero />
       <Works />
-      <About />
+      <About onSplineLoad={handleSplineLoad} />
       <Footer />
 
     </main>
