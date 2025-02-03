@@ -72,7 +72,7 @@ export const workItems: WorkItem[] = [
     ],
     category: 'Responsibilities: 3D modelling, texturing & shading, 3D animation ',
     client: 'For: NOIR production',
-    link: 'https://www.instagram.com/moto.inn/reel/Csf-CzMM8nz'
+    link: 'https://www.instagram.com/reel/C5fmFPwI9UV/?igsh=MXI4YWVndGsyMXk0Yw=='
   },
   {
     type: '2',
