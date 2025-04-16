@@ -1,10 +1,11 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import './App.scss';
-import { About } from './Components/About';
-import { Header } from './Components/Header';
-import { Hero } from './Components/Hero';
-import { Works } from './Components/Works';
-import { Footer } from './Components/Footer';
-import { Loader } from './Components/Loader/Loader';
+// import { About } from './Components/About';
+// import { Header } from './Components/Header';
+// import { Hero } from './Components/Hero';
+// import { Works } from './Components/Works';
+// import { Footer } from './Components/Footer';
+// import { Loader } from './Components/Loader/Loader';
 
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
@@ -13,6 +14,7 @@ import {
 } from "@tsparticles/engine";
 
 import { loadSlim } from "@tsparticles/slim";
+import { Maintenance } from './Components/Maintance/Maintance';
 
 const App: React.FC = () => {
   const [init, setInit] = useState(false);
@@ -106,18 +108,23 @@ const App: React.FC = () => {
 
   return (
     <main className="App">
-      {!isAppReady && <Loader />}
+      {/* {!isAppReady && <Loader />}
       {init && (
         <Particles
           id="tsparticles"
           options={options}
         />
-      )}
-      <Header />
+      )} */}
+      <Particles
+        id="tsparticles"
+        options={options}
+      />
+      <Maintenance />
+      {/* <Header />
       <Hero />
       <Works />
       <About onSplineLoad={handleSplineLoad} />
-      <Footer />
+      <Footer /> */}
 
     </main>
   );

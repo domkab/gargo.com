@@ -1,0 +1,44 @@
+.maintenance {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem;
+  color: $color-white;
+
+  &__content {
+    text-align: center;
+    max-width: 600px;
+    width: 100%;
+  }
+
+  &__message {
+    text-align: center;
+  }
+
+  &__title {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    font-size: 1.26rem;
+    @include onLaptop {
+      font-size: 2.5rem;
+    }
+  }
+
+  &__description {
+    font-size: 1.125rem;
+    margin-bottom: 2.5rem;
+    line-height: 1.5;
+  }
+
+  &__phone {
+    margin-top: 2rem;
+    text-decoration: none;
+    color: $color-white;
+    @include onLaptop {
+      font-size: 2rem;
+    }
+
+  }
+}

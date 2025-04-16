@@ -13,9 +13,11 @@
 @import "./Components/About/About.scss";
 @import "./Components/Footer/Footer.scss";
 @import "./Components/Loader/Loader.scss";
+@import "./Components/Maintance/Maintance.scss";
 
 html {
   background: $color-background-gradient;
+  font-family: $font-family;
 }
 
 body {
