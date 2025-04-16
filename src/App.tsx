@@ -18,8 +18,8 @@ import { Maintenance } from './Components/Maintance/Maintance';
 
 const App: React.FC = () => {
   const [init, setInit] = useState(false);
-  const [isSplineLoaded, setSplineLoaded] = useState(false);
-  const [isAppReady, setAppReady] = useState(false);
+  const [isSplineLoaded, _setSplineLoaded] = useState(false);
+  const [_isAppReady, setAppReady] = useState(false);
 
   useEffect(() => {
     initParticlesEngine(async engine => {
@@ -35,9 +35,9 @@ const App: React.FC = () => {
     }
   }, [init, isSplineLoaded]);
 
-  const handleSplineLoad = () => {
-    setSplineLoaded(true);
-  };
+  // const handleSplineLoad = () => {
+  //   setSplineLoaded(true);
+  // };
 
   const options: ISourceOptions = useMemo(
     () => ({
